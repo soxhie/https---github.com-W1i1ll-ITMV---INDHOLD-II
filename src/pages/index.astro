@@ -34,34 +34,77 @@
     </div>
 
     <div class="pink-box">
-      <h2>
-        Når du handler i vores webshop, støtter du både mennesker og miljøet.
-        Lad os sammen skabe en positiv indvirkning på både vores miljø og
-        samfund.
-      </h2>
+      <h2>Mød kvinderne bag i Tråd Med Verden</h2>
+      <p>
+        Når du støtter I Tråd Med Verden, er du med til at skabe en positiv
+        forandring både for vores samfund og vores miljø. Vi er forpligtede til
+        at skabe en verden, der er mere inkluderende og bæredygtig. Gennem vores
+        fokus på sociale arbejdspladser og genbrug af materialer skaber vi
+        meningsfulde jobmuligheder for kvinder i sårbare situationer og
+        reducerer samtidig vores klimamæssige fodaftryk. Lad os sammen gå hånd i
+        hånd mod en fremtid, der omfavner bæredygtighed og inklusion.
+      </p>
     </div>
 
     <div class="video-container">
       <iframe
         width="100%"
         height="600"
-        src="https://www.youtube.com/embed/vunPLrUupF4"
+        src="../../public/animation/itmv.mp4"
         title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
     </div>
 
     <div class="pink-banner">
-      <h3>
-        Vi er taknemmelige for vores talentfulde team, der gør det muligt for os
-        at skabe smukke, bæredygtige produkter og samtidig have en positiv
-        indflydelse på samfundet.
-      </h3>
+      HVAD FÅR VORES PRAKTIKANTER UD AF ET FORLØB HOS ITMV?
     </div>
   </main>
+  <div class="gif-container2">
+    <img src="../../public/animation/leftsideani.gif" alt="Gif 1" />
+
+    <img src="../../public/animation/rightsideani.gif" alt="Gif 2" />
+  </div>
+  <div class="pink-banner">
+    <p>
+      I 2023 var <b>100%</b> af vores pratikanter meget tilfredse med deres
+      forløb.
+    </p>
+    <p>
+      <b>85%</b> mente, at de har lært noget nyt inden for håndarbejde og
+      syning.
+    </p>
+    <p><b>62%</b> havde glæde af at få en struktureret hverdag.</p>
+    <p>
+      <b>54%</b> opleve en forbedring i deres tilstand i løbet af pratikken.
+    </p>
+    <p>
+      <b>46%</b>nød af møde nye mennesker og være en del af et arbjdsfællesskab.
+    </p>
+    <p>
+      <b>46%</b>fik mod på at forsætte i en anden pratik eller et andet arbjde
+      efter pratikforløbet.
+    </p>
+    <p><b>38%</b>blev bedre til at være sammen med andre mennesker.</p>
+    <p><b>31%</b>troede mere på sig selv og deres evner</p>
+  </div>
+  <div class="pink-box">
+    <h1>Sammen kan vi gøre en forskel</h1>
+  </div>
+  <div class="button-container">
+    <button>DONÉR</button>
+
+    <button>SHOP</button>
+  </div>
 
   <footer>
-    <p>&copy; 2022 Your Webshop. All rights reserved.</p>
+    <nav class="image">
+      <img
+        src="../../public/img/footer.png"
+        alt="navbar picture"
+        width="100%"
+        height="auto"
+      />
+    </nav>
   </footer>
 
   <style>
@@ -81,16 +124,8 @@
     p {
       font-family: "nunito" "sans-serif";
     }
-
-    main > * {
-      transform: translateZ(0);
-    }
-
-    main > [data-speed] {
-      position: relative;
-      transform-origin: 50% 0;
-      transform: translate3d(0, calc(var(--scroll-y) * var(--speed)), 0);
-      transition: transform 0.5s ease-out;
+    h1 {
+      text-align: center;
     }
 
     .gif-container {
@@ -99,28 +134,61 @@
       margin: 0;
       /* padding: 2rem 0; */
     }
+    .gif-container2 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .gif-container2 img {
+      width: 70%;
+      height: auto;
+      position: sticky;
+    }
 
     .pink-box {
       width: 100%;
       margin: 0;
       padding: 4rem;
-      background-color: #f1e0dd;
-      text-align: center;
-      font-family:;
+      text-align: left;
     }
 
     .video-container {
       width: 100%;
       height: auto;
+
       /* padding: 2rem 0; */
     }
 
     .pink-banner {
       width: 100%;
-      margin: 0 auto;
+      margin: 0;
       padding: 4rem;
       background-color: #f1e0dd;
       text-align: center;
+    }
+    button {
+      padding: 1rem 2rem;
+      margin: 5rem;
+      min-width: 100px;
+      max-width: 200px;
+      height: 50px;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #3e5c6d;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      flex: 1;
+      text-align: center;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: auto;
+      gap: 20px;
     }
 
     /* .video-container > video[data-speed] {
